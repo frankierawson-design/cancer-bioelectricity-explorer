@@ -1,0 +1,142 @@
+{
+  "version": 4,
+  "retrieved_at_utc": "2026-11-02T16:53:04.548730+00:00",
+  "date_start": "2006-11-02",
+  "date_end": "2026-11-02",
+  "database": "Europe PMC",
+  "search_fields": "Title and abstract",
+  "included_sources": [
+    "MED",
+    "PPR"
+  ],
+  "deduplication": "Lowercase DOI, otherwise source + identifier",
+  "unique_records": 32163,
+  "searches": [
+    {
+      "category": "Tumour treating fields",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(\"tumor treating fields\" OR \"tumour treating fields\" OR TTFields OR \"alternating electric fields\")",
+      "hit_count": 801,
+      "retrieved": 801,
+      "pages": 1,
+      "complete_pagination": true
+    },
+    {
+      "category": "Tumour–neuron electrical signalling",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(((neuron* OR synap* OR neural) AND (glioma* OR cancer OR tumor OR tumour) AND (electrical OR electrophysiolog* OR depolari* OR \"AMPA receptor\" OR glutamatergic OR GABAergic)))",
+      "hit_count": 1666,
+      "retrieved": 1666,
+      "pages": 2,
+      "complete_pagination": true
+    },
+    {
+      "category": "Ion channels and electrophysiology",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(((\"ion channel\" OR \"ion channels\" OR \"potassium channel\" OR \"sodium channel\" OR \"calcium channel\" OR \"chloride channel\" OR \"proton channel\") AND (voltage OR current OR conductance OR electrophysiolog* OR electrical)) OR \"voltage gated\" OR \"voltage-gated\")",
+      "hit_count": 2759,
+      "retrieved": 2759,
+      "pages": 3,
+      "complete_pagination": true
+    },
+    {
+      "category": "Bioelectronic materials and devices",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(bioelectronic* OR nanoantenna* OR \"nanotube porin\" OR \"nanotube porins\" OR \"conductive biomaterial\" OR \"conductive biomaterials\" OR \"conductive polymer\" OR \"conductive polymers\" OR \"bipolar electrode\" OR \"bipolar electrodes\")",
+      "hit_count": 392,
+      "retrieved": 392,
+      "pages": 1,
+      "complete_pagination": true
+    },
+    {
+      "category": "Electrical stimulation and electrotaxis",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(\"electrical stimulation\" OR \"electric stimulation\" OR \"electric field\" OR \"electric fields\" OR electrotaxis OR galvanotaxis OR electroceutical* OR \"electrical therapy\")",
+      "hit_count": 3175,
+      "retrieved": 3175,
+      "pages": 4,
+      "complete_pagination": true
+    },
+    {
+      "category": "Electroporation and electrochemotherapy",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(electroporat* OR electrochemotherap* OR electroablat* OR \"pulsed electric field\" OR \"pulsed electric fields\" OR \"nanosecond pulse\" OR \"nanosecond pulses\")",
+      "hit_count": 4391,
+      "retrieved": 4391,
+      "pages": 5,
+      "complete_pagination": true
+    },
+    {
+      "category": "Electrical impedance and capacitance",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(bioimpedance OR \"electrical impedance\" OR \"membrane capacitance\" OR \"dielectric spectroscopy\" OR \"electrical properties\" OR \"dielectric properties\")",
+      "hit_count": 1712,
+      "retrieved": 1712,
+      "pages": 2,
+      "complete_pagination": true
+    },
+    {
+      "category": "Mitochondrial electrical potential",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(\"mitochondrial membrane potential\" OR \"mitochondrial potential\")",
+      "hit_count": 11871,
+      "retrieved": 11871,
+      "pages": 12,
+      "complete_pagination": true
+    },
+    {
+      "category": "Bioelectricity and membrane voltage",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:(bioelectric* OR \"membrane potential\" OR \"membrane voltage\" OR \"resting potential\" OR depolari* OR hyperpolari*)",
+      "hit_count": 17701,
+      "retrieved": 17701,
+      "pages": 18,
+      "complete_pagination": true
+    },
+    {
+      "category": "Additional cancer terminology",
+      "query": "(SRC:MED OR SRC:PPR) AND FIRST_PDATE:[2006-11-02 TO 2026-11-02] AND TITLE_ABS:(malignan* OR oncolog* OR myeloma* OR neuroblastoma* OR medulloblastoma* OR retinoblastoma* OR mesothelioma* OR myelodysplas* OR osteosarcoma* OR gliosarcoma* OR rhabdomyosarcoma* OR chordoma* OR ependymoma*) AND NOT TITLE_ABS:(cancer OR cancers OR tumor OR tumors OR tumour OR tumours OR neoplas* OR carcinoma* OR glioma* OR glioblastoma OR leukemi* OR leukaemi* OR lymphoma* OR melanoma* OR sarcoma* OR metastas*) AND TITLE_ABS:((bioelectric* OR \"membrane potential\" OR \"membrane voltage\" OR \"resting potential\" OR depolari* OR hyperpolari*) OR (((\"ion channel\" OR \"ion channels\" OR \"potassium channel\" OR \"sodium channel\" OR \"calcium channel\" OR \"chloride channel\" OR \"proton channel\") AND (voltage OR current OR conductance OR electrophysiolog* OR electrical)) OR \"voltage gated\" OR \"voltage-gated\") OR (((neuron* OR synap* OR neural) AND (glioma* OR cancer OR tumor OR tumour) AND (electrical OR electrophysiolog* OR depolari* OR \"AMPA receptor\" OR glutamatergic OR GABAergic))) OR (\"tumor treating fields\" OR \"tumour treating fields\" OR TTFields OR \"alternating electric fields\") OR (electroporat* OR electrochemotherap* OR electroablat* OR \"pulsed electric field\" OR \"pulsed electric fields\" OR \"nanosecond pulse\" OR \"nanosecond pulses\") OR (\"electrical stimulation\" OR \"electric stimulation\" OR \"electric field\" OR \"electric fields\" OR electrotaxis OR galvanotaxis OR electroceutical* OR \"electrical therapy\") OR (bioelectronic* OR nanoantenna* OR \"nanotube porin\" OR \"nanotube porins\" OR \"conductive biomaterial\" OR \"conductive biomaterials\" OR \"conductive polymer\" OR \"conductive polymers\" OR \"bipolar electrode\" OR \"bipolar electrodes\") OR (bioimpedance OR \"electrical impedance\" OR \"membrane capacitance\" OR \"dielectric spectroscopy\" OR \"electrical properties\" OR \"dielectric properties\") OR (\"mitochondrial membrane potential\" OR \"mitochondrial potential\"))",
+      "hit_count": 1841,
+      "retrieved": 1841,
+      "complete_pagination": true
+    }
+  ],
+  "coverage_status": "Expanded search collection; not exhaustive or systematically screened",
+  "scope_note": "Mitochondrial-potential-only papers are a separate adjacent collection. Query categories are retrieval tags, not verified mechanisms.",
+  "preprints": 1322,
+  "seed_pmid_checks": {
+    "24380845": true,
+    "24176851": true,
+    "31534222": true,
+    "28087597": true,
+    "41572439": true,
+    "37709951": true
+  },
+  "seed_check_note": "Six known examples recovered. This is not an estimate of overall recall.",
+  "data_files": [
+    "catalogue-000.json",
+    "catalogue-001.json",
+    "catalogue-002.json",
+    "catalogue-003.json",
+    "catalogue-004.json",
+    "catalogue-005.json",
+    "catalogue-006.json",
+    "catalogue-007.json",
+    "catalogue-008.json",
+    "catalogue-009.json",
+    "catalogue-010.json",
+    "catalogue-011.json",
+    "catalogue-012.json",
+    "catalogue-013.json",
+    "catalogue-014.json",
+    "catalogue-015.json",
+    "catalogue-016.json",
+    "catalogue-017.json",
+    "catalogue-018.json",
+    "catalogue-019.json",
+    "catalogue-020.json",
+    "catalogue-021.json",
+    "catalogue-022.json",
+    "catalogue-023.json",
+    "catalogue-024.json",
+    "catalogue-025.json",
+    "catalogue-026.json",
+    "catalogue-027.json",
+    "catalogue-028.json",
+    "catalogue-029.json",
+    "catalogue-030.json",
+    "catalogue-031.json",
+    "catalogue-032.json"
+  ]
+}
