@@ -29,3 +29,9 @@ No software licence is granted yet. Source visibility does not imply permission 
 ## Contributions
 
 Please report a DOI or PMID for missing literature, a reproducible physics or unit issue, or a compatible calibration dataset via GitHub Issues. Include cell type, protocol, measurement units, replicate structure and uncertainty. Do not upload private patient or unpublished experimental data without permission.
+
+## Development: cancer-specific exploratory scenario laboratory
+
+The proposed `dist/cancer-scenarios.html` research tool compares a generic reference membrane with hypothetical glioblastoma, breast and colorectal cancer scenarios. **No cancer-type defaults are measurements.** Users may edit conductances, capacitance, TPMET electron flux, a generic time-dependent potassium gate and provenance. The RK4 solver lives in `dist/cancer-scenario-core.js`; `tests/cancer-scenarios.test.cjs` checks numerical invariants and input validation. This is not a disease classification, clinical prediction or mechanistic demonstration of tumour biology.
+
+To run the additional numerical checks: `node tests/cancer-scenarios.test.cjs`. Real cancer-specific calibration requires matched voltage, conductance, capacitance and redox measurements, independently curated sources and separate test data. The separate ChatGPT-hosted research preview remains unsynchronised until its source is available.
