@@ -1,0 +1,80 @@
+{
+  "model": "passive-tpmet-circuit-1.0",
+  "documentationRevision": 1,
+  "documentationDate": "2026-11-02",
+  "status": "Exploratory research tool",
+  "calibration": "Default parameters are illustrative and not fitted to matched cancer-cell experiments.",
+  "validation": "Cancer-outcome hypotheses are unvalidated. Numerical checks do not establish biological validity.",
+  "literature": "Search results awaiting relevance screening. Not exhaustive or a completed systematic review.",
+  "defaults": {
+    "C": 20,
+    "gK": 1,
+    "EK": -90,
+    "gNa": 0.05,
+    "ENa": 60,
+    "gCl": 0.2,
+    "ECl": -40,
+    "gL": 0.1,
+    "EL": -60,
+    "ECa": 120,
+    "J": 0.1,
+    "eta": 0.5,
+    "direction": 1,
+    "I": 10,
+    "f": 10
+  },
+  "units": {
+    "C": "pF",
+    "gK": "nS",
+    "gNa": "nS",
+    "gCl": "nS",
+    "gL": "nS",
+    "EK": "mV",
+    "ENa": "mV",
+    "ECl": "mV",
+    "EL": "mV",
+    "ECa": "mV",
+    "J": "fmol electrons/s/cell",
+    "eta": "dimensionless uncompensated fraction",
+    "direction": "+1 electron export, -1 electron import",
+    "I": "pA inward conventional current",
+    "f": "Hz",
+    "time": "ms"
+  },
+  "equations": [
+    "C*dV/dt = -sum(g_i*(V-E_i)) + Iapp + ITPMET",
+    "ITPMET = direction*96.48533212*eta*J",
+    "G = sum(g_i)",
+    "Vrest = (sum(g_i*E_i)+ITPMET)/G",
+    "tau_ms = C/G",
+    "fc_Hz = 1000*G/(2*pi*C)",
+    "sinusoidal_amplitude_mV = abs(I)/sqrt(G^2+(2*pi*f*C/1000)^2)"
+  ],
+  "assumptions": [
+    "Single isopotential compartment",
+    "Fixed ionic conductances and reversal potentials",
+    "Prescribed direct electron flux",
+    "Charge compensation represented by eta, without explicit proton-channel kinetics",
+    "No fitted mapping to ROS, proliferation, apoptosis or treatment efficacy",
+    "Calcium driving force is not calcium concentration",
+    "Injected current is not an applied electric field"
+  ],
+  "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/12991237/",
+    "https://pubmed.ncbi.nlm.nih.gov/12673252/",
+    "https://pubmed.ncbi.nlm.nih.gov/31229569/",
+    "https://pubmed.ncbi.nlm.nih.gov/20334912/",
+    "https://pubmed.ncbi.nlm.nih.gov/37738861/"
+  ],
+  "searchLog": "literature/search-log.json",
+  "implementation": [
+    "circuit-core.js",
+    "circuit.js"
+  ],
+  "changeLog": [
+    {
+      "date": "2026-11-02",
+      "change": "Added explicit exploratory status, documentation links and export labels. Model equations and defaults unchanged."
+    }
+  ]
+}
