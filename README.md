@@ -2,7 +2,9 @@
 
 An exploratory research preview for cancer bioelectricity literature and a passive trans-plasma-membrane electron transfer (TPMET) circuit model.
 
-- Website: https://frankierawson-design.github.io/cancer-bioelectricity-explorer
+- GitHub Pages website: https://frankierawson-design.github.io/cancer-bioelectricity-explorer
+- Separately hosted research preview: https://cancer-bioelectric-response.frankie-rawson.chatgpt.site/
+- Synchronisation status (3 November 2026): the separately hosted preview may contain newer literature-search and TPMET functionality. Source-level equivalence has not been verified; GitHub Pages should not be described as a fully synchronised copy until the current source and assets are imported and tests rerun.
 - Reviewer walkthrough: https://frankierawson-design.github.io/cancer-bioelectricity-explorer/review
 - Model: `passive-tpmet-circuit-1.0`
 
