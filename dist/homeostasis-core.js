@@ -34,7 +34,7 @@ function initial(p){
  const ENa=reversal(p.Nai,p.Nao,1,p.temperature),EK=reversal(p.Ki,p.Ko,1,p.temperature),ECl=reversal(p.Cli,p.Clo,-1,p.temperature);
  const protonE=1000*R*p.temperature/F*Math.log(10)*(p.pHi-p.pHo);
  const g=p.gNa+p.gK+p.gCl+p.gH+p.gLeak;
- return {V:(p.gNa*ENa+p.gK*EK+p.gCl*ECl+p.gH*protonE+p.gLeak*p.ELeak)/g,Nai:p.Nai,Nao:p.Nao,Ki:p.Ki,Ko:p.Ko,Cli:p.Cli,Clo:p.Clo,pHi:p.pHi,pHo:p.pHo,qIntegral:0};
+ return {V:g>0?(p.gNa*ENa+p.gK*EK+p.gCl*ECl+p.gH*protonE+p.gLeak*p.ELeak)/g:p.ELeak,Nai:p.Nai,Nao:p.Nao,Ki:p.Ki,Ko:p.Ko,Cli:p.Cli,Clo:p.Clo,pHi:p.pHi,pHo:p.pHo,qIntegral:0};
 }
 function rhs(s,p,t){
  for(const k of ['Nai','Nao','Ki','Ko','Cli','Clo'])if(s[k]<=0||!Number.isFinite(s[k]))throw Error('Non-physical concentration '+k);
