@@ -1,16 +1,18 @@
 name: Scientific model regression checks
 on:
   push:
-    branches: [main, improve-model-literature-validation-2026-11]
+    branches: [main, improve-model-literature-validation-2026-11, electrochemical-homeostasis-v2-2026-11]
     paths:
       - 'dist/circuit-core.js'
       - 'dist/cancer-scenario-core.js'
+      - 'dist/homeostasis-core.js'
       - 'tests/**'
       - '.github/workflows/scientific-tests.yml'
   pull_request:
     paths:
       - 'dist/circuit-core.js'
       - 'dist/cancer-scenario-core.js'
+      - 'dist/homeostasis-core.js'
       - 'tests/**'
       - '.github/workflows/scientific-tests.yml'
   workflow_dispatch:
@@ -28,3 +30,5 @@ jobs:
         run: node tests/circuit.test.cjs
       - name: Cancer-specific scenario implementation checks
         run: node tests/cancer-scenarios.test.cjs
+      - name: Ion homeostasis conservation and numerical checks
+        run: node tests/homeostasis.test.cjs
