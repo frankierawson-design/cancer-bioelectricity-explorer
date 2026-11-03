@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 560" role="img" aria-labelledby="t d">
+<title id="t">Conceptual membrane bioelectric circuit</title><desc id="d">An illustrated cell membrane separates extracellular and intracellular spaces. Ion current, membrane capacitance, and trans-plasma-membrane electron transfer are shown as distinct conceptual pathways.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102d4b"/><stop offset="1" stop-color="#0c5771"/></linearGradient><linearGradient id="cell"><stop stop-color="#c3e9ed"/><stop offset="1" stop-color="#6cc6cb"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="17"/></filter></defs>
+<rect width="820" height="560" rx="28" fill="url(#bg)"/><circle cx="450" cy="288" r="226" fill="#43b6c0" opacity=".12" filter="url(#glow)"/>
+<g fill="none" stroke="#8bc8d5" opacity=".28"><circle cx="410" cy="288" r="206"/><circle cx="410" cy="288" r="185"/></g>
+<path d="M151 304 C194 114 338 87 473 104 C615 123 674 214 663 314 C650 436 510 489 383 473 C246 454 125 407 151 304Z" fill="#154c64" stroke="#85d9da" stroke-width="12"/>
+<path d="M166 306 C207 137 336 105 472 121 C594 136 650 219 645 310 C637 415 508 468 383 456 C260 442 143 402 166 306Z" fill="#153c57" stroke="#4ba6ae" stroke-width="5" opacity=".72"/>
+<g fill="#a6e0e0" opacity=".85"><circle cx="225" cy="210" r="5"/><circle cx="567" cy="184" r="5"/><circle cx="580" cy="384" r="6"/><circle cx="276" cy="407" r="5"/></g>
+<g stroke="#bce9e4" stroke-width="3" stroke-linecap="round" fill="none"><path d="M257 315 C302 260 343 264 385 299"/><path d="M385 299 l-14 -3 m14 3 l-9 -12"/><path d="M453 301 C500 257 543 274 558 313"/><path d="M558 313 l-12 -11 m12 11 l4 -17"/></g>
+<g fill="#e4f9f5" font-family="system-ui,sans-serif"><text x="39" y="55" font-size="16" letter-spacing="2">EXPLORATORY CIRCUIT</text><text x="333" y="300" font-size="25" font-weight="700">Vₘ</text><text x="340" y="328" font-size="15" opacity=".78">intracellular</text><text x="32" y="486" font-size="14" opacity=".78">extracellular space</text></g>
+<g fill="#f0bf75" stroke="#f9d49e" stroke-width="2"><rect x="116" y="274" width="56" height="64" rx="16"/><rect x="627" y="243" width="54" height="74" rx="16"/></g>
+<g stroke="#f7c577" stroke-width="4" fill="none" stroke-linecap="round"><path d="M143 250 v-30 m-9 10 9-10 9 10"/><path d="M654 338 v31 m-10 -10 10 10 10 -10"/></g>
+<g font-family="system-ui,sans-serif" font-size="17" font-weight="650" fill="#fff"><text x="29" y="170">Ion current</text><path d="M139 178 l-3 74" stroke="#f0bf75" stroke-width="2"/><text x="636" y="174">TPMET</text><path d="M668 185 l-12 48" stroke="#f0bf75" stroke-width="2"/><text x="270" y="500">Membrane capacitance Cₘ</text><path d="M395 474 v12" stroke="#9cdeeb" stroke-width="2"/></g>
+<g fill="#bdebf0" font-family="system-ui,sans-serif" font-size="14"><text x="40" y="541">SCHEMATIC • NOT TO SCALE • NO PREDICTED OUTCOME</text></g>
+</svg>
