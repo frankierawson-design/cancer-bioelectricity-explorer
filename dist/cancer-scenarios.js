@@ -22,8 +22,8 @@ function line(points,min,max,vMin,vMax){return points.map((point,i)=> (i?'L':'M'
 function plot(a,b){const all=a.points.concat(b.points),lo=Math.min(...all.map(x=>x.v)),hi=Math.max(...all.map(x=>x.v)),padding=Math.max(1,(hi-lo)*.15),vMin=lo-padding,vMax=hi+padding,max=500;
 let out='<path d="M58 29V265H646" fill="none" stroke="#7899a9" stroke-width="2"/>';
 for(let k=0;k<=4;k++){const y=265-225*k/4;out+='<path d="M58 '+y+'H646" stroke="#e0eaf0"/><text x="51" y="'+(y+4)+'" font-size="12" fill="currentColor" text-anchor="end">'+f(vMin+(vMax-vMin)*k/4)+'</text>'}
-out+='<path d="'+line(b.points,min,max,vMin,vMax)+'" stroke="#8797a6" stroke-width="2.5" fill="none"/>';
-out+='<path d="'+line(a.points,min,max,vMin,vMax)+'" stroke="#057a94" stroke-width="3" fill="none"/>';
+out+='<path d="'+line(b.points,0,max,vMin,vMax)+'" stroke="#8797a6" stroke-width="2.5" fill="none"/>';
+out+='<path d="'+line(a.points,0,max,vMin,vMax)+'" stroke="#057a94" stroke-width="3" fill="none"/>';
 out+='<text x="18" y="17" fill="currentColor" font-size="13">V (mV)</text><text x="58" y="288" fill="currentColor" font-size="12">0</text><text x="646" y="288" fill="currentColor" text-anchor="end" font-size="12">500</text><text x="350" y="313" fill="currentColor" text-anchor="middle" font-size="13">Time (ms)</text>';
 $('plot').innerHTML=out;$('legend').textContent='Teal: '+$('preset').selectedOptions[0].textContent+' | Grey: illustrative reference (same 10 pA current pulse).';
 }
