@@ -1,0 +1,30 @@
+name: Scientific model regression checks
+on:
+  push:
+    branches: [main, improve-model-literature-validation-2026-11]
+    paths:
+      - 'dist/circuit-core.js'
+      - 'dist/cancer-scenario-core.js'
+      - 'tests/**'
+      - '.github/workflows/scientific-tests.yml'
+  pull_request:
+    paths:
+      - 'dist/circuit-core.js'
+      - 'dist/cancer-scenario-core.js'
+      - 'tests/**'
+      - '.github/workflows/scientific-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Passive TPMET implementation checks
+        run: node tests/circuit.test.cjs
+      - name: Cancer-specific scenario implementation checks
+        run: node tests/cancer-scenarios.test.cjs
