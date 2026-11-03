@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const {defaults:d,solve:s,pulse}=require('../dist/circuit-core.js');
+const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-9,`${a} != ${b}`);
+const r=s(d);
+near(r.G*r.rest,d.gK*d.EK+d.gNa*d.ENa+d.gCl*d.ECl+d.gL*d.EL+r.electronCurrent);
+near(s({...d,C:2*d.C}).rest,r.rest);
+near(s({...d,C:2*d.C}).tau,2*r.tau);
+near(s({...d,C:2*d.C}).cutoff,r.cutoff/2);
+near(s({...d,eta:0}).rest,r.ionicRest);
+assert.ok(s({...d,direction:-1}).rest<r.ionicRest);
+near(pulse(d,0,100),r.rest);
+near(pulse(d,100000,100),r.rest);
+near(s({...d,f:1e-12}).amplitude,d.I/r.G);
+console.log('PASS: current balance, capacitance, compensation, flux sign, pulse recovery, DC limit. These are implementation checks, not biological validation.');
